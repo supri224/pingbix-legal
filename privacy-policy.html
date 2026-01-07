@@ -1,131 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WGE75LVH2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-5WGE75LVH2');
+    </script>
+
+    <script>
+        gtag('consent', 'default', {
+            'ad_storage': 'granted',
+            'analytics_storage': 'granted'
+        });
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Pingbix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary-color: #0066ff; /* A professional tech blue */
-            --text-color: #333;
-            --bg-color: #f4f7f9;
-            --card-bg: #ffffff;
-            --border-color: #e1e4e8;
-        }
-
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 40px 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: var(--card-bg);
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-
-        h1 {
-            color: var(--primary-color);
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 10px;
-        }
-
-        .last-updated {
-            font-size: 0.9rem;
-            color: #666;
-            margin-bottom: 30px;
-        }
-
-        h2 {
-            font-size: 1.4rem;
-            margin-top: 30px;
-            color: #222;
-        }
-
-        p {
-            margin-bottom: 15px;
-        }
-
-        .highlight-box {
-            background-color: #f0f7ff;
-            border-left: 4px solid var(--primary-color);
-            padding: 15px 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .contact-section {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border-color);
-        }
-
-        .email-link {
-            color: var(--primary-color);
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .email-link:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 600px) {
-            body { padding: 20px 10px; }
-            .container { padding: 20px; }
-            h1 { font-size: 1.8rem; }
-        }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; color: #1a202c; line-height: 1.7; }
+        .hero-gradient { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); }
+        .gradient-text { background: linear-gradient(90deg, #1e3a8a, #10b981); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .prose-custom { font-size: 1.125rem; }
+        .prose-custom h2 { font-size: 1.875rem; font-weight: 800; margin-top: 2.5em; margin-bottom: 1em; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem; }
+        .prose-custom p { margin-bottom: 1.5em; }
+        .prose-custom ul { list-style-type: disc; padding-left: 1.5em; margin-bottom: 1.5em; }
+        .prose-custom li { margin-bottom: 0.75em; }
+        @keyframes float-subtle { 0% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-15px) rotate(5deg); } 100% { transform: translateY(0px) rotate(0deg); } }
+        .floating-icon { position: absolute; animation: float-subtle 6s ease-in-out infinite; opacity: 0.08; pointer-events: none; }
+        @keyframes spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .animate-spin-slow { animation: spin-slow 20s linear infinite; }
+        .mobile-submenu { max-height: 0; opacity: 0; overflow: hidden; visibility: hidden; display: none; transition: all 0.3s ease-out; transform: translateY(-10px); }
+        .mobile-submenu.active { max-height: 2000px; opacity: 1; visibility: visible; display: block; transform: translateY(0); }
     </style>
 </head>
-<body>
 
-<div class="container">
-    <h1>Privacy Policy</h1>
-    <p class="last-updated">Effective Date: January 2026</p>
+<body class="bg-white">
 
-    <section>
-        <p><strong>Pingbix</strong> is a leading Communication Platform as a Service (CPaaS). We are committed to protecting your privacy and ensuring transparency in how we handle data.</p>
-    </section>
+<header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-6 relative" id="navbar-wrapper">
+        <nav class="flex justify-between items-center py-4">
+            <div>
+                <a href="/"><img alt="Pingbix Logo" class="h-12" src="images.png" /></a>
+            </div>
 
-    <section>
-        <h2>1. Meta Platform Integration</h2>
-        <p>Pingbix utilizes Meta platforms, including <strong>Facebook, Instagram, and WhatsApp APIs</strong>, to enable seamless business messaging services. By using our platform, you acknowledge that data processing occurs in accordance with both this policy and Meta’s respective privacy terms.</p>
-    </section>
+            </div>
 
-    <section>
-        <h2>2. Data Collection and Usage</h2>
-        <div class="highlight-box">
-            We collect and process data <strong>only as required</strong> to provide high-quality messaging services. This includes:
-            <ul>
-                <li>Message content and metadata</li>
-                <li>Account identifiers</li>
-                <li>Technical logs for service stability</li>
-            </ul>
+        </nav>
+    </div>
+</header>
+
+    <section class="relative hero-gradient pt-24 pb-20 text-center overflow-hidden">
+        <div class="container mx-auto px-6 max-w-4xl relative z-10">
+            <h1 class="text-5xl md:text-7xl font-black text-gray-900 mb-4 tracking-tighter">
+                <span class="gradient-text">Privacy Policy</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                Pingbix is a Communication Platform as a Service (CPaaS). We are committed to protecting your data and ensuring transparency in our messaging services.
+            </p>
+            <p class="mt-4 text-sm text-gray-500">Last Updated: January 7, 2026</p>
         </div>
-        <p>We do not sell personal data to third parties. Data is used strictly for service delivery, regulatory compliance, and platform security.</p>
     </section>
 
-    <section>
-        <h2>3. Data Protection and Rights</h2>
-        <p>Your data security is our priority. This policy applies to all Pingbix applications, integrations, and API connections.</p>
-        <p>Users have the right to request access to their data or request permanent deletion of their records from our systems.</p>
-    </section>
+    <section class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-6 max-w-7xl">
+            <div class="flex flex-col lg:flex-row gap-16">
+                <aside class="w-full lg:w-1/4 lg:sticky top-32 self-start">
+                    <h3 class="text-xl font-bold mb-4">Table of Contents</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li><a href="#service-overview" class="hover:text-emerald-500 hover:underline">1. Service Overview</a></li>
+                        <li><a href="#meta-platforms" class="hover:text-emerald-500 hover:underline">2. Meta Platform Usage</a></li>
+                        <li><a href="#data-collection" class="hover:text-emerald-500 hover:underline">3. Data Collection</a></li>
+                        <li><a href="#data-usage" class="hover:text-emerald-500 hover:underline">4. Data Usage & Security</a></li>
+                        <li><a href="#user-rights" class="hover:text-emerald-500 hover:underline">5. User Rights & Deletion</a></li>
+                        <li><a href="#policy-scope" class="hover:text-emerald-500 hover:underline">6. Policy Scope</a></li>
+                    </ul>
+                </aside>
 
-    <section class="contact-section">
-        <h2>Contact Us</h2>
-        <p>For any privacy-related inquiries or data requests, please contact our privacy team at:</p>
-        <p><strong>Email:</strong> <a href="mailto:whatsapp@pingbix.com" class="email-link">whatsapp@pingbix.com</a></p>
-    </section>
-</div>
+                <main class="w-full lg:w-3/4 prose-custom text-gray-700">
+                    <div id="service-overview">
+                        <h2>1. Service Overview</h2>
+                        <p>Pingbix operates as a Communication Platform as a Service (CPaaS), providing integrated solutions for businesses to communicate effectively with their users across multiple digital channels.</p>
+                    </div>
 
+                    <div id="meta-platforms">
+                        <h2>2. Meta Platform Usage</h2>
+                        <p>Pingbix utilizes Meta platforms, including Facebook, Instagram, and WhatsApp APIs, to enable and facilitate comprehensive business messaging services. By using our platform, you acknowledge that communications are processed through these third-party Meta infrastructures to ensure delivery.</p>
+                    </div>
+
+                    <div id="data-collection">
+                        <h2>3. Data Collection & Processing</h2>
+                        <p>We collect and process data only as strictly required to provide our messaging services. This data includes:</p>
+                        <ul>
+                            <li><strong>Message Content:</strong> The body of communications sent via our platform.</li>
+                            <li><strong>Metadata:</strong> Information related to the message delivery, such as timestamps and status.</li>
+                            <li><strong>Account Identifiers:</strong> Specific IDs required to route messages to the correct recipients.</li>
+                        </ul>
+                    </div>
+
+                    <div id="data-usage">
+                        <h2>4. Data Usage & Protection</h2>
+                        <p><strong>We do not sell personal data.</strong> Your data is used exclusively for the following purposes:</p>
+                        <ul>
+                            <li>Efficient service delivery.</li>
+                            <li>Regulatory and legal compliance.</li>
+                            <li>Platform security and fraud prevention.</li>
+                        </ul>
+                    </div>
+
+                    <div id="user-rights">
+                        <h2>5. User Rights & Data Deletion</h2>
+                        <p>Users maintain full rights over their personal information. You may request access to your data or request the permanent deletion of your data at any time.</p>
+                        <p>To exercise these rights, please contact our privacy team at: <a href="mailto:whatsapp@pingbix.com" class="text-blue-600 font-bold">whatsapp@pingbix.com</a></p>
+                    </div>
+
+                    <div id="policy-scope">
+                        <h2>6. Policy Scope</h2>
+                        <p>This Privacy Policy applies to all Pingbix applications, software integrations, and CPaaS offerings across all geographical regions.</p>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+<footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="mt-16 border-t border-gray-700 pt-8 flex flex-col sm:flex-row justify-between items-center">
+            <p class="text-sm text-gray-500">&copy; 2018-2026 Pingbix. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="/privacypolicy.html" class="text-sm text-gray-500 hover:text-white">Privacy Policy</a>
+                <a href="/terms-and-conditions.html" class="text-sm text-gray-500 hover:text-white">Terms</a> 
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Navigation and Mobile Menu Logic
+    document.addEventListener('DOMContentLoaded', function () {
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    });
+
+    gtag('consent', 'update', {
+      'ad_storage': 'granted',
+      'analytics_storage': 'granted',
+      'wait_for_update': 0
+    });
+</script>
 </body>
 </html>
